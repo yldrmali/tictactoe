@@ -65,7 +65,7 @@ const win = (clicked) => {
     var items = contains('#tictactoe ' + testClass, turn);
     if (items.length == size) {
       for (let item of items) {
-        item.style.backgroundColor = 'rgba(0, 213, 255, 0.89)';
+        item.style.backgroundColor = '#00d4ff';
         item.style.color = 'white';
       }
       return true;
