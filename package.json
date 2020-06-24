@@ -1,0 +1,23 @@
+{
+  "name": "tictactoe",
+  "version": "1.0.0",
+  "description": "Tic Tac Toe\r     [tictactoe](https://yldrmali.github.io/tictactoe/)",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yldrmali/tictactoe.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yldrmali/tictactoe/issues"
+  },
+  "homepage": "https://github.com/yldrmali/tictactoe#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

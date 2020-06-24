@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+
+* {
+  font-family: 'Nanum Myeongjo', serif;
+}
+
+$break-small: 540px;
+$break-medium: 720px;
+$break-large: 900px;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: relative;
+}
+
+.result {
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  font-style: italic;;
+  transform: translateX(-50%);
+  color: black;
+  width: 50%;
+  border-bottom: 2px solid  rgba(0, 213, 255, 0.89);
+  font-size: 2rem;
+  text-align: center;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vw;
+  height: 90vw;
+  border: 2px;
+}
+
+#tictactoe {
+  width: 100%;
+  height: 100%;
+}
+
+table {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+tr {
+  width: 100%;
+  display: flex;
+}
+
+td {
+  flex: 1;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+}
+
+#player {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 2rem;
+  text-align: center;
+  border-radius: 2px;
+  color: rgb(46, 45, 45);
+}
+
+#player::after {
+  content: '';
+  display: block;
+  // position: absolute;
+  height: 22px;
+  background: rgba(0, 213, 255, 0.89);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 212, 255, 1) 1%,
+    rgba(0, 212, 255, 0) 100%
+  );
+}
+
+@media screen and (min-width: $break-small) {
+  .container {
+    width: 500px;
+    height: 500px;
+  }
+  td {
+    font-size: 6rem;
+  }
+}

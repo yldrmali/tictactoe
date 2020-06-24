@@ -9,14 +9,14 @@ let final='';
 
 //IIFE,module pattern
 (function setSize(){
-  let nsize=prompt("SET SIZE, 3 or 4 or 5",3);
-  if(Number(nsize)<3||Number(nsize)>5){
-    setSize()
-  }else{
-    size=nsize
+  // let nsize=prompt("SET SIZE, 3 or 4 or 5",3);
+  // if(Number(nsize)<3||Number(nsize)>5){
+  //   setSize()
+  // }else{
+    size=3
     init();
-  }
-})()
+  })()
+
 
 function init(){
   var board = document.createElement('table');
@@ -55,7 +55,7 @@ function startNewGame(){
       square.style.backgroundColor='white'
       square.style.color='gray'
     })
-  },1000) 
+  },2000) 
 }
 //factory function
 const win=(clicked)=>{
@@ -65,7 +65,7 @@ const win=(clicked)=>{
     var items = contains('#tictactoe ' + testClass, turn);
     if (items.length == size) {
       for(let item of items){
-        item.style.backgroundColor='darkgreen';
+        item.style.backgroundColor='rgba(0, 213, 255, 0.89)';
         item.style.color='white';
       }
       return true;
@@ -110,7 +110,7 @@ function setResult(result){
   setTimeout(()=>{
     document.querySelector('.result').style.display='none'//common
     document.querySelector('#result').textContent=EMPTY;
-  },1000)
+  },2000)
 }
 
 

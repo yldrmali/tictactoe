@@ -1,16 +1,19 @@
-# Project Title
+# tictactoe
 
-Tic Tac Toe
+tictactoe game for n*n size(between 3 and 5).
 
-## Getting Started
+# Stack
 
-The project is a basic practice for factory functions, modules and functions .
+Vanilla JS,SASS,HTML 
 
 
-## Built With
+## Live Preview
 
-* HTML
-* CSS
-* Vanilla JS
+[tictactoe](https://yldrmali.github.io/tictactoe/)
+
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
 
 
