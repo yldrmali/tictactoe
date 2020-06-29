@@ -13,7 +13,7 @@ let final = '';
   if (Number(nsize) < 3 || Number(nsize) > 5) {
     setSize();
   } else {
-    size = 3;
+    size =nsize;
     init();
   }
 })();
